@@ -19,7 +19,7 @@ public class BookItApiUtil {
 
         String token = response.path("accessToken");
 
-        String finalToken ="Bearer "+token;
+        String finalToken ="Bearer " + token;
 
         return  finalToken;
     }

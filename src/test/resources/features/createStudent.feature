@@ -1,6 +1,7 @@
 Feature: Create student
 
-
+ #in this scenario the information below is base on documentation so this is reason why we have several tables info
+  #
   Scenario: Create student a teacher and verify status code 201
     Given I logged Bookit api using "blyst6@si.edu" and "barbabaslyst"
     When I send POST request to "/api/students/student" endpoint with following information
