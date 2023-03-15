@@ -55,6 +55,9 @@ public class BookItApiUtil {
 
     //teacher , student-member,student-leader
     //it will take user info from conf.properties
+
+
+
     public static String getTokenByRole(String role){
         //switch,if make sure you get correct user info
         //send request/get token/ return token

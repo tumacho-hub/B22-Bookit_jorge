@@ -6,6 +6,11 @@ import java.util.Properties;
 
 public class Environment {
 
+    /*
+    this class is going to help us to read from sources file and that will allow us to
+    change environments
+     */
+
         public static final String URL;
         public static final String BASE_URL;
         public static final String DB_USERNAME;
@@ -21,6 +26,7 @@ public class Environment {
         static {
 
             Properties properties = null;
+            //the line below can switch from regular environment to terminal
             String environment = System.getProperty("environment") != null ? environment = System.getProperty("environment") : ConfigurationReader.get("environment");
             //String environment = ConfigurationReader.get("environment");
 
